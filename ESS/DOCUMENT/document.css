@@ -1,0 +1,68 @@
+   .icon-bg {
+      background: #eff6ff;
+      color: #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem;
+    }
+    html,
+    body,
+    #__next,
+    .dashboard-root {
+      height: 100%;
+      min-height: 100dvh;
+    }
+    /* Hide scroll bar on desktop but allow scrolling on phone */
+    @media (min-width: 640px) {
+      html, body {
+        overflow: hidden !important;
+      }
+      main {
+        overflow: visible !important;
+      }
+    }
+    @media (max-width: 639px) {
+      html, body {
+        overflow-y: auto !important;
+      }
+    }
+    @media (max-width: 1023px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .dashboard-main {
+        grid-template-columns: 1fr !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .dashboard-main {
+        gap: 2rem !important;
+      }
+      .dashboard-main > div {
+        margin-bottom: 0 !important;
+      }
+      .p-6 {
+        padding: 1.25rem !important;
+      }
+      .mb-6, .mb-8 {
+        margin-bottom: 1.25rem !important;
+      }
+    }
+    .document-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .document-table th, .document-table td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .document-table th {
+      font-weight: 600;
+      color: #374151;
+      background-color: #f9fafb;
+    }
