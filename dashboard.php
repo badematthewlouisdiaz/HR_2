@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+include("db.php")
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ session_start();
 
 
         <!-- Dashboard -->
-        <!-- <?php include('cards2.php'); ?> -->
+        <!-- <?php include('cards.php'); ?> -->
               </ul>
             </div>
           </div>

@@ -1,0 +1,146 @@
+ .centered-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+    .drop-zone {
+      border: 2px dashed #cbd5e1;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .drop-zone.active {
+      border-color: #3b82f6;
+      background-color: #eff6ff;
+    }
+    .module-card {
+      transition: all 0.2s ease;
+    }
+    .module-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .step-indicator {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .step-active {
+      background-color: #3b82f6;
+      color: white;
+    }
+    .step-inactive {
+      background-color: #e5e7eb;
+      color: #6b7280;
+    }
+    .step-progress {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .step-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #e5e7eb;
+    }
+    .step-dot.completed {
+      background-color: #10b981;
+    }
+    .step-dot.current {
+      background-color: #3b82f6;
+    }
+    
+    /* Custom button styles */
+    .btn-custom {
+      background-color: white;
+      border: 1px solid #d1d5db;
+      color: #374151;
+      transition: all 0.2s ease;
+    }
+    
+    .btn-custom:hover {
+      background-color: #f9fafb;
+      border-color: #9ca3af;
+    }
+    
+    .btn-custom:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+    }
+    
+    /* Status badges */
+    .status-approved {
+      background-color: #10b981;
+      color: white;
+    }
+    
+    .status-rejected {
+      background-color: #ef4444;
+      color: white;
+    }
+    
+    .status-pending {
+      background-color: #f59e0b;
+      color: white;
+    }
+    
+    .status-compliance {
+      background-color: #8b5cf6;
+      color: white;
+    }
+    
+    .status-hold {
+      background-color: #6b7280;
+      color: white;
+    }
+    
+    .status-posted {
+      background-color: #3b82f6;
+      color: white;
+    }
+    /* Posted Modules Specific Styles */
+.stat {
+    border-left: 4px solid;
+    transition: transform 0.2s ease-in-out;
+}
+
+.stat:hover {
+    transform: translateY(-2px);
+}
+
+.stat:nth-child(1) {
+    border-left-color: #3B82F6;
+}
+
+.stat:nth-child(2) {
+    border-left-color: #8B5CF6;
+}
+
+.stat:nth-child(3) {
+    border-left-color: #10B981;
+}
+
+.stat:nth-child(4) {
+    border-left-color: #06B6D4;
+}
+
+.module-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.module-card:hover {
+    border-color: #3B82F6;
+    transform: translateY(-2px);
+}
+
+.badge-success {
+    background-color: #10B981;
+    color: white;
+    border: none;
+}

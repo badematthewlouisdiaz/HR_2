@@ -8,11 +8,7 @@ $dbPass = "";           // add your password if required
 // ✅ List only the databases you want to connect to
 $targetDatabases = [
     "hr2_soliera_usm",
-    "hr2_succession",
     "hr2_soliera_usm",
-    "hr2_training",
-    "hr2_usm",
-    "learning"
    
 ];
 

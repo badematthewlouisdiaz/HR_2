@@ -75,261 +75,441 @@ session_start()
             </div>
           </div>
           <!-- Main Content -->
-          <div class="px-8 py-8">
-            <div class="text-center mb-10">
-              <h2 class="text-3xl font-bold text-gray-800 mb-4">EXAM</h2>
-              <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Complete this exam to assess your foundational knowledge before beginning the new hire onboarding process.
-              </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-              <!-- Exam Details Card -->
-              <div class="exam-card rounded-xl p-6 shadow-md">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <i class="fas fa-info-circle mr-3 text-blue-500"></i>Examination Details
-                </h3>
-                <ul class="space-y-3">
-                  <li class="flex items-start">
-                    <i class="fas fa-clock mt-1 mr-3 text-blue-500"></i>
-                    <span><span class="font-medium">Duration:</span> 15 minutes</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-question-circle mt-1 mr-3 text-blue-500"></i>
-                    <span><span class="font-medium">Questions:</span> 10 role-specific items</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle mt-1 mr-3 text-blue-500"></i>
-                    <span><span class="font-medium">Format:</span> Multiple choice</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-lock mt-1 mr-3 text-blue-500"></i>
-                    <span><span class="font-medium">Security:</span> Timed session, no backtracking</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <!-- Instructions Card -->
-              <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <i class="fas fa-clipboard-list mr-3 text-blue-500"></i>Instructions
-                </h3>
-                <ol class="list-decimal pl-5 space-y-3">
-                  <li>Ensure you have a stable internet connection</li>
-                  <li>This exam must be completed in one session</li>
-                  <li>Answers cannot be changed after submission</li>
-                  <li>Use of external resources is prohibited</li>
-                  <li>The timer will begin when you start the exam</li>
-                </ol>
-              </div>
-            </div>
-            
-            <!-- Purpose Section -->
-            <div class="bg-blue-50 rounded-xl p-6 mb-10">
-              <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center justify-center">
-                <i class="fas fa-graduation-cap mr-3 text-blue-500"></i>Purpose of This Examination
-              </h3>
-              <p class="text-gray-700 text-center">
-                This entrance exam helps us understand your current knowledge level and tailor your onboarding experience to ensure your success. Your results will determine the appropriate starting point in our learning management system.
-              </p>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex justify-center">
-              <button id="beginExamBtn" class="btn btn-primary text-white font-medium rounded-lg px-8 py-3 shadow-sm flex items-center">
-                <i class="fas fa-play-circle mr-3"></i>Begin Examination
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-               <!-- Application Form -->
-        <div id="applicationForm" class="hidden">
-            <div class="card bg-base-100 shadow-xl mb-12">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-2">Learning Modules Repository</h1>
+        <p class="text-gray-600 mb-8">Manage and organize all learning materials for your organization</p>
+        
+        <!-- Module Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <!-- Module Card -->
+            <div class="card bg-base-100 shadow-md module-card">
                 <div class="card-body">
-                    <h2 class="card-title text-2xl mb-6">
-                        <i class="fas fa-user-circle mr-2"></i>Applicant Information
-                    </h2>
-                    <form id="applicantForm">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">First Name</span>
-                                </label>
-                                <input type="text" placeholder="Enter your First Name" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Last Name</span>
-                                </label>
-                                <input type="text" placeholder="Enter your Last Name" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Email</span>
-                                </label>
-                                <input type="email" placeholder="Enter Email" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Phone</span>
-                                </label>
-                                <input type="tel" placeholder="Enter your number" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control md:col-span-2">
-                                <label class="label">
-                                    <span class="label-text">Position Applying For</span>
-                                </label>
-                                <select class="select select-bordered" id="roleSelect" required>
-                            <option disabled selected>Select a position</option>
-                         <option value="chef">Chef</option>
-                         <option value="hr_manager">HR Manager</option>
-                         <option value="staffs">Staffs</option>
-                         </select>
-                            </div>
-                        </div>
-                        <div class="form-control mt-6">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-arrow-right mr-2"></i>Proceed to Exam
-                            </button>
-                        </div>
-                    </form>
+                    <div class="flex justify-between items-start">
+                        <h3 class="card-title">Employee Handbook</h3>
+                        <div class="badge badge-success">Active</div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 my-2">
+                        <div class="badge badge-outline">Human Resources</div>
+                        <div class="badge badge-outline">All Employees</div>
+                    </div>
+                    <p class="text-sm text-gray-500">Date Added: 2023-10-15</p>
+                    <p class="text-sm text-gray-500">Topic: Company Policies</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-sm btn-outline">View</button>
+                        <button class="btn btn-sm btn-primary">Download</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module Card -->
+            <div class="card bg-base-100 shadow-md module-card">
+                <div class="card-body">
+                    <div class="flex justify-between items-start">
+                        <h3 class="card-title">Safety Protocols</h3>
+                        <div class="badge badge-success">Active</div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 my-2">
+                        <div class="badge badge-outline">Operations</div>
+                        <div class="badge badge-outline">All Employees</div>
+                    </div>
+                    <p class="text-sm text-gray-500">Date Added: 2023-09-22</p>
+                    <p class="text-sm text-gray-500">Topic: Workplace Safety</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-sm btn-outline">View</button>
+                        <button class="btn btn-sm btn-primary">Download</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module Card -->
+            <div class="card bg-base-100 shadow-md module-card">
+                <div class="card-body">
+                    <div class="flex justify-between items-start">
+                        <h3 class="card-title">IT Security Guidelines</h3>
+                        <div class="badge badge-error">Inactive</div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 my-2">
+                        <div class="badge badge-outline">Information Technology</div>
+                        <div class="badge badge-outline">IT Staff</div>
+                    </div>
+                    <p class="text-sm text-gray-500">Date Added: 2023-11-05</p>
+                    <p class="text-sm text-gray-500">Topic: Cybersecurity</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-sm btn-outline">View</button>
+                        <button class="btn btn-sm btn-primary">Download</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Role Description -->
-        <div id="roleDescription" class="hidden">
-            <div class="card bg-base-100 shadow-xl mb-8">
-                <div class="card-body">
-                    <h2 class="card-title text-2xl mb-4" id="roleTitle"></h2>
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="flex-1">
-                            <h3 class="text-lg font-semibold mb-2">Role Overview</h3>
-                            <p id="roleOverview" class="mb-4"></p>
-                            <h3 class="text-lg font-semibold mb-2">Exam Details</h3>
-                            <ul class="list-disc pl-5" id="examDetails">
+        
+        <!-- Module Table -->
+        <div class="card bg-base-100 shadow-md">
+            <div class="card-body">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="card-title">All Learning Modules</h2>
+                    <div class="flex gap-2">
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-outline">Filter</label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>All Modules</a></li>
+                                <li><a>Active Only</a></li>
+                                <li><a>Inactive</a></li>
                             </ul>
                         </div>
-                        <div class="flex-1">
-                            <h3 class="text-lg font-semibold mb-2">Skills Tested</h3>
-                            <div class="flex flex-wrap gap-2 mb-4" id="skillsTested">
-                            </div>
-                            <div class="mt-6">
-                                <button class="btn btn-primary w-full" onclick="startExam()">
-                                    <i class="fas fa-play mr-2"></i>Start Exam Now
-                                </button>
-                                <button class="btn btn-outline mt-4 w-full" onclick="backToApplication()">
-                                    <i class="fas fa-arrow-left mr-2"></i>Back to Application
-                                </button>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Exam Section -->
-        <div id="examSection" class="hidden">
-            <div class="card bg-base-100 shadow-xl mb-12">
-                <div class="card-body">
-                    <div class="flex justify-between items-center mb-6">
-                        <h2 class="card-title text-2xl" id="examTitle">Knowledge Assessment</h2>
-                        <div class="badge badge-primary badge-lg p-4" id="timer">Time: 15:00</div>
-                    </div>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
-                        <p class="font-semibold">Instructions:</p>
-                        <ul class="list-disc pl-5 mt-2">
-                            <li>This exam consists of <span id="totalQuestions">10</span> multiple-choice questions</li>
-                            <li>You have 15 minutes to complete the exam</li>
-                            <li>Each question has only one correct answer</li>
-                            <li>You cannot go back to previous questions</li>
-                            <li>Your results will be displayed immediately after completion</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="text-lg font-semibold">
-                            Question <span id="currentQuestionNumber">1</span> of <span id="totalQuestionsCount">10</span>
-                        </div>
-                        <div class="flex gap-2">
-                            <div class="badge badge-info" id="questionCategory">Frontend Development</div>
-                            <div class="badge badge-secondary" id="questionDifficulty">Medium</div>
-                        </div>
-                    </div>
-                    
-                    <form id="examForm">
-                        <div class="space-y-8" id="questionsContainer">
-                            <!-- Questions will be dynamically inserted here -->
-                        </div>
-                        
-                        <div class="flex justify-between mt-8">
-                            <button type="button" class="btn btn-outline" id="prevBtn" onclick="prevQuestion()" disabled>
-                                <i class="fas fa-arrow-left mr-2"></i>Previous
-                            </button>
-                            <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">
-                                Next<i class="fas fa-arrow-right ml-2"></i>
-                            </button>
-                            <button type="submit" class="btn btn-success hidden" id="submitBtn">
-                                <i class="fas fa-paper-plane mr-2"></i>Submit Exam
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Results Section -->
-        <div id="resultsSection" class="hidden">
-            <div class="card bg-base-100 shadow-xl mb-12">
-                <div class="card-body">
-                    <h2 class="card-title text-2xl mb-6">Exam Results</h2>
-                    
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
-                        <div class="flex justify-center">
-                            <div class="radial-progress bg-primary text-primary-content border-4 border-primary" style="--value:0; --size:12rem;" id="scoreCircle">0%</div>
-                        </div>
-                        
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2" id="resultMessage"></h3>
-                            <p id="scoreText" class="text-lg mb-4"></p>
-                            <div class="stats shadow">
-                                <div class="stat">
-                                    <div class="stat-title">Correct Answers</div>
-                                    <div class="stat-value text-success" id="correctAnswers">0</div>
-                                    <div class="stat-desc">out of <span id="totalAnswers">10</span> questions</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-title">Time Taken</div>
-                                    <div class="stat-value text-info" id="timeTaken">00:00</div>
-                                    <div class="stat-desc">minutes:seconds</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
-                        <h4 class="font-semibold text-lg mb-4">Detailed Results:</h4>
-                        <div class="space-y-4" id="detailedResults">
-                            <!-- Detailed results will be inserted here -->
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-center gap-4">
-                        <button class="btn btn-outline" onclick="restartExam()">
-                            <i class="fas fa-redo mr-2"></i>Retake Exam
-                        </button>
-                        <button class="btn btn-primary">
-                            <i class="fas fa-download mr-2"></i>Download Certificate
-                        </button>
-                    </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <thead>
+                            <tr>
+                                <th>Module Name</th>
+                                <th>Department</th>
+                                <th>Role</th>
+                                <th>Date Added</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Employee Handbook</td>
+                                <td>Human Resources</td>
+                                <td>All Employees</td>
+                                <td>2023-10-15</td>
+                                <td><div class="badge badge-success">Active</div></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-xs btn-outline">View</button>
+                                        <button class="btn btn-xs btn-primary">Download</button>
+                                        <button class="btn btn-xs btn-warning">Edit</button>
+                                        <button class="btn btn-xs btn-error">Deactivate</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Safety Protocols</td>
+                                <td>Operations</td>
+                                <td>All Employees</td>
+                                <td>2023-09-22</td>
+                                <td><div class="badge badge-success">Active</div></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-xs btn-outline">View</button>
+                                        <button class="btn btn-xs btn-primary">Download</button>
+                                        <button class="btn btn-xs btn-warning">Edit</button>
+                                        <button class="btn btn-xs btn-error">Deactivate</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IT Security Guidelines</td>
+                                <td>Information Technology</td>
+                                <td>IT Staff</td>
+                                <td>2023-11-05</td>
+                                <td><div class="badge badge-error">Inactive</div></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-xs btn-outline">View</button>
+                                        <button class="btn btn-xs btn-primary">Download</button>
+                                        <button class="btn btn-xs btn-warning">Edit</button>
+                                        <button class="btn btn-xs btn-success">Activate</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Customer Service Training</td>
+                                <td>Front Office / Reception</td>
+                                <td>Guest Service Agent</td>
+                                <td>2023-08-30</td>
+                                <td><div class="badge badge-success">Active</div></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-xs btn-outline">View</button>
+                                        <button class="btn btn-xs btn-primary">Download</button>
+                                        <button class="btn btn-xs btn-warning">Edit</button>
+                                        <button class="btn btn-xs btn-error">Deactivate</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Food Safety Standards</td>
+                                <td>Kitchen / Culinary</td>
+                                <td>Line Cook</td>
+                                <td>2023-10-10</td>
+                                <td><div class="badge badge-success">Active</div></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-xs btn-outline">View</button>
+                                        <button class="btn btn-xs btn-primary">Download</button>
+                                        <button class="btn btn-xs btn-warning">Edit</button>
+                                        <button class="btn btn-xs btn-error">Deactivate</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-   
+
+    <!-- Upload Modal -->
+    <dialog id="upload_modal" class="modal modal-middle">
+        <div class="modal-box max-w-4xl">
+            <h3 class="font-bold text-lg mb-6">Upload Learning Module</h3>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Left: Drag and Drop & File Info -->
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Upload File</h4>
+                    <div id="dropZone" class="drop-zone p-8 text-center cursor-pointer mb-4">
+                        <div class="flex flex-col items-center justify-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                            <p class="text-lg">Drag and drop files here</p>
+                            <p class="text-sm text-gray-500">Supports PDF, DOCX, PPT, and more</p>
+                            <button class="btn btn-primary mt-2">Browse Files</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <div class="text-sm text-gray-500 mb-2">Uploaded files:</div>
+                        <div class="space-y-2" id="fileList">
+                            <!-- Files will be listed here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Module Details Form -->
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Module Details</h4>
+                    <form class="space-y-4">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Title</span>
+                            </label>
+                            <input type="text" class="input input-bordered" placeholder="Enter module title">
+                        </div>
+                        
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Department</span>
+                            </label>
+                            <select class="select select-bordered" id="departmentSelect">
+                                <option disabled selected>Select Department</option>
+                                <option value="front-office">Front Office / Reception</option>
+                                <option value="housekeeping">Housekeeping</option>
+                                <option value="food-beverage">Food & Beverage (F&B)</option>
+                                <option value="kitchen">Kitchen / Culinary</option>
+                                <option value="sales-marketing">Sales & Marketing</option>
+                                <option value="hr">Human Resources (HR)</option>
+                                <option value="finance">Finance / Accounting</option>
+                                <option value="engineering">Engineering / Maintenance</option>
+                                <option value="security">Security</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Role</span>
+                            </label>
+                            <select class="select select-bordered" id="roleSelect" disabled>
+                                <option disabled selected>Select Department First</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Topic</span>
+                            </label>
+                            <input type="text" class="input input-bordered" placeholder="Enter topic">
+                        </div>
+                        
+                        <div class="form-control mt-6">
+                            <button class="btn btn-primary">Save Module</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        // Department and Role Data
+        const departmentRoles = {
+            'front-office': [
+                'Front Desk Manager',
+                'Receptionist / Front Desk Officer',
+                'Guest Service Agent / Concierge',
+                'Reservation Agent',
+                'Bellhop / Porter'
+            ],
+            'housekeeping': [
+                'Executive Housekeeper / Housekeeping Manager',
+                'Floor Supervisor',
+                'Room Attendant / Housekeeper',
+                'Laundry Attendant',
+                'Public Area Attendant'
+            ],
+            'food-beverage': [
+                'F&B Manager / Director',
+                'Restaurant Manager / Captain',
+                'Waiter / Waitress / Server',
+                'Bartender',
+                'Banquet / Catering Coordinator'
+            ],
+            'kitchen': [
+                'Executive Chef / Head Chef',
+                'Sous Chef',
+                'Line Cook / Station Chef',
+                'Pastry Chef / Baker',
+                'Kitchen Steward / Dishwasher'
+            ],
+            'sales-marketing': [
+                'Sales & Marketing Manager',
+                'Revenue Manager',
+                'Event / Banquet Sales Coordinator',
+                'Social Media / Marketing Executive'
+            ],
+            'hr': [
+                'HR Manager / Director',
+                'Recruitment Officer',
+                'Training & Development Specialist',
+                'Payroll / HR Assistant'
+            ],
+            'finance': [
+                'Finance Manager / Controller',
+                'Accountant',
+                'Payroll Officer',
+                'Cost Controller'
+            ],
+            'engineering': [
+                'Chief Engineer / Engineering Manager',
+                'Maintenance Technician',
+                'Electrician / Plumber',
+                'HVAC Technician'
+            ],
+            'security': [
+                'Security Manager / Supervisor',
+                'Security Guard'
+            ]
+        };
+
+        // DOM Elements
+        const departmentSelect = document.getElementById('departmentSelect');
+        const roleSelect = document.getElementById('roleSelect');
+        const dropZone = document.getElementById('dropZone');
+        const fileList = document.getElementById('fileList');
+
+        // Update roles based on department selection
+        departmentSelect.addEventListener('change', function() {
+            const department = this.value;
+            
+            // Clear existing options
+            roleSelect.innerHTML = '';
+            
+            if (department && departmentRoles[department]) {
+                // Enable the role select
+                roleSelect.disabled = false;
+                
+                // Add default option
+                const defaultOption = document.createElement('option');
+                defaultOption.disabled = true;
+                defaultOption.selected = true;
+                defaultOption.textContent = 'Select Role';
+                roleSelect.appendChild(defaultOption);
+                
+                // Add department-specific roles
+                departmentRoles[department].forEach(role => {
+                    const option = document.createElement('option');
+                    option.value = role;
+                    option.textContent = role;
+                    roleSelect.appendChild(option);
+                });
+            } else {
+                // Disable the role select if no department is selected
+                roleSelect.disabled = true;
+                const defaultOption = document.createElement('option');
+                defaultOption.disabled = true;
+                defaultOption.selected = true;
+                defaultOption.textContent = 'Select Department First';
+                roleSelect.appendChild(defaultOption);
+            }
+        });
+
+        // Drag and Drop Functionality
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+        
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, highlight, false);
+        });
+        
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, unhighlight, false);
+        });
+        
+        function highlight() {
+            dropZone.classList.add('active');
+        }
+        
+        function unhighlight() {
+            dropZone.classList.remove('active');
+        }
+        
+        dropZone.addEventListener('drop', handleDrop, false);
+        
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            handleFiles(files);
+        }
+        
+        function handleFiles(files) {
+            ([...files]).forEach(uploadFile);
+        }
+        
+        function uploadFile(file) {
+            // In a real application, you would upload the file to a server here
+            console.log('Uploading file:', file.name);
+            
+            // Add file to the file list
+            const fileElement = document.createElement('div');
+            fileElement.className = 'flex items-center justify-between p-2 bg-gray-50 rounded';
+            fileElement.innerHTML = `
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>${file.name}</span>
+                </div>
+                <div class="text-xs text-gray-500">${formatFileSize(file.size)}</div>
+            `;
+            fileList.appendChild(fileElement);
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+    
      <script src="../soliera.js"></script>
   <script src="../sidebar.js"></script>
 </body>
